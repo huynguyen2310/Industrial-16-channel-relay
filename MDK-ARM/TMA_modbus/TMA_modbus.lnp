@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp
+"tma_modbus\startup_stm32f446xx.o"
+"tma_modbus\main.o"
+"tma_modbus\stm32f4xx_it.o"
+"tma_modbus\stm32f4xx_hal_msp.o"
+"tma_modbus\stm32f4xx_hal_tim.o"
+"tma_modbus\stm32f4xx_hal_tim_ex.o"
+"tma_modbus\stm32f4xx_hal_uart.o"
+"tma_modbus\stm32f4xx_hal_rcc.o"
+"tma_modbus\stm32f4xx_hal_rcc_ex.o"
+"tma_modbus\stm32f4xx_hal_flash.o"
+"tma_modbus\stm32f4xx_hal_flash_ex.o"
+"tma_modbus\stm32f4xx_hal_flash_ramfunc.o"
+"tma_modbus\stm32f4xx_hal_gpio.o"
+"tma_modbus\stm32f4xx_hal_dma_ex.o"
+"tma_modbus\stm32f4xx_hal_dma.o"
+"tma_modbus\stm32f4xx_hal_pwr.o"
+"tma_modbus\stm32f4xx_hal_pwr_ex.o"
+"tma_modbus\stm32f4xx_hal_cortex.o"
+"tma_modbus\stm32f4xx_hal.o"
+"tma_modbus\stm32f4xx_hal_exti.o"
+"tma_modbus\system_stm32f4xx.o"
+--strict --scatter "TMA_modbus\TMA_modbus.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TMA_modbus.map" -o TMA_modbus\TMA_modbus.axf
